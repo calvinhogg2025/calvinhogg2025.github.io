@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CALVIN HOGG > Animations</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio website for Calvin Hogg, digital media bachelor graduate with a passion for 3D animation.">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/display.css">
+        <link rel="stylesheet" href="styles/display-navbar.css">
+        <link rel="stylesheet" href="styles/display-modal.css">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    </head>
+    <body>
+
+		<nav id="navbar">
+			<img id="logo" src="assets/logos/calvin.svg"/>
+			<a class="navbar-page" href="renders.html">
+				<img class="navbar-page-image" src="assets/icons/renders.svg"/>
+				<p class="navbar-page-text">Renders</p>
+			</a>
+			<a class="navbar-pageCurrent" href="animations.html">
+				<img class="navbar-page-image" src="assets/icons/animations.svg"/>
+				<p class="navbar-page-text">Animations</p>
+			</a>
+			<a class="navbar-page" href="software.html">
+				<img class="navbar-page-image" src="assets/icons/software.svg"/>
+				<p class="navbar-page-text">Software</p>
+			</a>
+			<a class="navbar-page" href="workbooks.html">
+				<img class="navbar-page-image" src="assets/icons/workbooks.svg"/>
+				<p class="navbar-page-text">Workbooks</p>
+			</a>
+			<a class="navbar-page" href="about.html">
+				<img class="navbar-page-image" src="assets/icons/about.svg"/>
+				<p class="navbar-page-text">About Me</p>
+			</a>
+			<div id="menuButton" onclick="toggleMenu()">
+				<img id="menuButton-image" src="assets/icons/menu.svg"/>
+			</div>
+			<div id="navbar-divider"></div>
+        </nav>
+
+		<div id="menu">
+			<a class="menu-page" href="renders.html">
+				<img class="menu-page-image" src="assets/icons/renders.svg"/>
+				<p class="menu-page-text">Renders</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-pageCurrent" href="animations.html">
+				<img class="menu-page-image" src="assets/icons/animations.svg"/>
+				<p class="menu-page-text">Animations</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="software.html">
+				<img class="menu-page-image" src="assets/icons/software.svg"/>
+				<p class="menu-page-text">Software</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="workbooks.html">
+				<img class="menu-page-image" src="assets/icons/workbooks.svg"/>
+				<p class="menu-page-text">Workbooks</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="about.html">
+				<img class="menu-page-image" src="assets/icons/about.svg"/>
+				<p class="menu-page-text">About Me</p>
+			</a>
+		</div>
+
+		<div id="content" onclick="hideMenu()">
+
+			<div class="banner" style="background-image: url('assets/images/banner.webp');">
+	            <div class="banner-gradient">
+					<div style="margin: auto;">
+						<p class="banner-title">Animations</p>
+						<p class="banner-subtitle">Tap on a card to learn more</p>
+					</div>
+	            </div>
+	        </div>
+
+			<section class="section-top section-bottom">
+	            <div class="container">
+					<p class="section-title">Finals</p>
+					<div class="divider"></div>
+					<div class="grid">
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-Mery" style="background-image: url('assets/images/animations/mery/mery.png');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Mery</p>
+							</div>
+						</div>
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-Sole" style="background-image: url('assets/images/animations/sole/sole-1.webp');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">My Name is Sole Letafu</p>
+							</div>
+						</div>
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-Loops" style="background-image: url('assets/images/animations/loops/loops-1.webp');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Thematic Loops</p>
+							</div>
+						</div>
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-Principles" style="background-image: url('assets/images/animations/principles/principles-1.webp');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Principles of Animation</p>
+							</div>
+						</div>
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-PlayStation" style="background-image: url('assets/images/animations/playstation/playstation-1.webp');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">PlayStation Commercial</p>
+							</div>
+						</div>
+
+						<div class="card" data-bs-toggle="modal" data-bs-target="#modal-Toilet" style="background-image: url('assets/images/animations/toilet/toilet-1.webp');">
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">The Toilet Thing</p>
+							</div>
+						</div>
+
+	                </div>
+	            </div>
+	        </section>
+
+	        <div class="footer">
+	            <p class="footer-text">&copy; 2023 Calvin Hogg. All rights reserved.</p>
+	        </div>
+
+		</div>
+
+
+
+		<div class="modal fade" id="modal-Mery" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">Mery</p>
+                        <p class="modal-subtitle">WORK IN PROGRESS</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/mery/mery.png"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								Working on a short animation based on real reference footage. Got to start somewhere.
+								<br><br>
+								Credit goes to www.meryproject.com for the character rig.
+								<br><br>
+							</p>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="modal-Sole" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">My Name is Sole Letafu</p>
+                        <p class="modal-subtitle">April 2022</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/sole/sole-1.webp"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/sole/sole-2.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/sole/sole-3.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/sole/sole-4.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								While learning photogrammetry, I took several photos of Dylan but didn't tell him what I planned to do with them.
+								<br><br>
+								I brought the images into RealityCapture, then unwrapped the texture and applied it to the Dylan V1 model. After some basic facial rigging involving blendshapes, I synced this animation to a voice clip and showed the result to the class.
+								<br><br>
+								The resemblance was incredible, but I don't think this model was blushing enough.
+								<br><br>
+							</p>
+							<a class="button" href="https://www.youtube.com/watch?v=NPkLtsiDiXM" target="_blank">
+								<img class="button-icon" src="assets/logos/youtube.svg"/>
+								<div class="button-text">
+									<p class="button-text1">Watch on YouTube</p>
+								</div>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="modal-Loops" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">Thematic Loops</p>
+                        <p class="modal-subtitle">November 2021</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/loops/loops-1.webp"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/loops/loops-2.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/loops/loops-3.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/loops/loops-4.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/loops/loops-5.webp"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/animations/loops/loops-6.webp"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								This project involved creating a series of 9 looping animations that share a calm theme. The assets were created in Adobe Illustrator, then manipulated in Adobe After Effects.
+								<br><br>
+							</p>
+							<a class="button" href="https://www.youtube.com/shorts/q_HFUp8duCU" target="_blank">
+								<img class="button-icon" src="assets/logos/youtube.svg"/>
+								<div class="button-text">
+									<p class="button-text1">Watch on YouTube</p>
+								</div>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="modal-Principles" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">Principles of Animation</p>
+                        <p class="modal-subtitle">September 2018</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/principles/principles-1.webp"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								This short animation attempts to recreate the 12 principles of animation in a 3D environment.
+								<br><br>
+							</p>
+							<a class="button" href="https://www.youtube.com/watch?v=CG_tYtiKAMw" target="_blank">
+								<img class="button-icon" src="assets/logos/youtube.svg"/>
+								<div class="button-text">
+									<p class="button-text1">Watch on YouTube</p>
+								</div>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="modal-PlayStation" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">PlayStation Commercial</p>
+                        <p class="modal-subtitle">September 2017</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/playstation/playstation-1.webp"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								This unofficial commercial for the PlayStation 4 makes use of some of the principles of animation.
+								<br><br>
+							</p>
+							<a class="button" href="https://www.youtube.com/watch?v=m24wUcCypDk" target="_blank">
+								<img class="button-icon" src="assets/logos/youtube.svg"/>
+								<div class="button-text">
+									<p class="button-text1">Watch on YouTube</p>
+								</div>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="modal-Toilet" tabindex="-1">
+            <div class="modal-dialog standard-dialog">
+                <div class="modal-content">
+					<div class="modal-section1">
+						<p class="modal-title">The Toilet Thing</p>
+                        <p class="modal-subtitle">July 2017</p>
+						<div class="modal-images">
+                        	<img class="modal-images-feature" src="assets/images/animations/toilet/toilet-1.webp"/>
+							<div class="modal-images-gallery">
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+								<img class="modal-images-gallery-thumbnail" src="assets/images/placeholder.svg"/>
+							</div>
+						</div>
+                    </div>
+					<div class="modal-section2">
+                        <p class="modal-header">ABOUT THIS PIECE</p>
+						<div class="modal-description">
+                            <p>
+								This animation required finding ways for the character to express itself with limited features.
+								<br><br>
+							</p>
+							<a class="button" href="https://www.youtube.com/watch?v=s-auATt47Mo" target="_blank">
+								<img class="button-icon" src="assets/logos/youtube.svg"/>
+								<div class="button-text">
+									<p class="button-text1">Watch on YouTube</p>
+								</div>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<script src="scripts/jquery-3.7.1.min.js"></script>
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/main.js"></script>
+
+    </body>
+</html>

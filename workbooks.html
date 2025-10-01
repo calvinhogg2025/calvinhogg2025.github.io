@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CALVIN HOGG > Workbooks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio website for Calvin Hogg, digital media bachelor graduate with a passion for 3D animation.">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/display.css">
+        <link rel="stylesheet" href="styles/display-navbar.css">
+        <link rel="stylesheet" href="styles/display-modal.css">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    </head>
+    <body>
+
+		<nav id="navbar">
+			<img id="logo" src="assets/logos/calvin.svg"/>
+			<a class="navbar-page" href="renders.html">
+				<img class="navbar-page-image" src="assets/icons/renders.svg"/>
+				<p class="navbar-page-text">Renders</p>
+			</a>
+			<a class="navbar-page" href="animations.html">
+				<img class="navbar-page-image" src="assets/icons/animations.svg"/>
+				<p class="navbar-page-text">Animations</p>
+			</a>
+			<a class="navbar-page" href="software.html">
+				<img class="navbar-page-image" src="assets/icons/software.svg"/>
+				<p class="navbar-page-text">Software</p>
+			</a>
+			<a class="navbar-pageCurrent" href="workbooks.html">
+				<img class="navbar-page-image" src="assets/icons/workbooks.svg"/>
+				<p class="navbar-page-text">Workbooks</p>
+			</a>
+			<a class="navbar-page" href="about.html">
+				<img class="navbar-page-image" src="assets/icons/about.svg"/>
+				<p class="navbar-page-text">About Me</p>
+			</a>
+			<div id="menuButton" onclick="toggleMenu()">
+				<img id="menuButton-image" src="assets/icons/menu.svg"/>
+			</div>
+			<div id="navbar-divider"></div>
+        </nav>
+
+		<div id="menu">
+			<a class="menu-page" href="renders.html">
+				<img class="menu-page-image" src="assets/icons/renders.svg"/>
+				<p class="menu-page-text">Renders</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="animations.html">
+				<img class="menu-page-image" src="assets/icons/animations.svg"/>
+				<p class="menu-page-text">Animations</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="software.html">
+				<img class="menu-page-image" src="assets/icons/software.svg"/>
+				<p class="menu-page-text">Software</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-pageCurrent" href="workbooks.html">
+				<img class="menu-page-image" src="assets/icons/workbooks.svg"/>
+				<p class="menu-page-text">Workbooks</p>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="about.html">
+				<img class="menu-page-image" src="assets/icons/about.svg"/>
+				<p class="menu-page-text">About Me</p>
+			</a>
+		</div>
+
+		<div id="content" onclick="hideMenu()">
+
+			<div class="banner" style="background-image: url('assets/images/banner.webp');">
+	            <div class="banner-gradient">
+					<div style="margin: auto;">
+						<p class="banner-title">Workbooks</p>
+					</div>
+	            </div>
+	        </div>
+
+			<section class="section-top section-bottom">
+	            <div class="containerWorkbook" style="max-width: 428px;">
+	                <p class="section-title">Workbooks</p>
+					<div class="divider"></div>
+					<div class="gridWorkbook">
+
+						<a class="workbook" href="workbooks/2022-sem2-majorProjects.pdf" target="_blank">
+							<p class="workbook-title">Dylan V2</p>
+							<p class="workbook-subtitle">Semester 2, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2022-sem1-majorProjectsC.pdf" target="_blank">
+							<p class="workbook-title">Major Projects Game (Part 3)</p>
+							<p class="workbook-subtitle">Semester 1, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2022-sem1-majorProjectsB.pdf" target="_blank">
+							<p class="workbook-title">Major Projects Game (Part 2)</p>
+							<p class="workbook-subtitle">Semester 1, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2022-sem1-majorProjectsA.pdf" target="_blank">
+							<p class="workbook-title">Major Projects Game (Part 1)</p>
+							<p class="workbook-subtitle">Semester 1, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2022-sem1-appliedMedia.pdf" target="_blank">
+							<p class="workbook-title">Photogrammetry, Mount Victoria and Dylan V1</p>
+							<p class="workbook-subtitle">Semester 1, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2022-sem1-contextAndPractice.pdf" target="_blank">
+							<p class="workbook-title">Koji Kondo Research Report</p>
+							<p class="workbook-subtitle">Semester 1, 2022</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2021-sem2-appliedMedia.pdf" target="_blank">
+							<p class="workbook-title">Cyberthug Core</p>
+							<p class="workbook-subtitle">Semester 2, 2021</p>
+						</a>
+
+						<a class="workbook" href="workbooks/2021-sem1-appliedMedia.pdf" target="_blank">
+							<p class="workbook-title">Cyberthug</p>
+							<p class="workbook-subtitle">Semester 1, 2021</p>
+						</a>
+
+	                </div>
+	            </div>
+	        </section>
+
+	        <div class="footer">
+	            <p class="footer-text">&copy; 2023 Calvin Hogg. All rights reserved.</p>
+	        </div>
+
+		</div>
+
+		<script src="scripts/jquery-3.7.1.min.js"></script>
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/main.js"></script>
+
+    </body>
+</html>
