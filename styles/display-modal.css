@@ -20,6 +20,7 @@
 		width: 100%;
 		border-radius: 0.67rem 0.67rem 0 0;
 		border-top: var(--border-modal);
+		border-bottom: 0;
 		border-left: var(--border-modal);
 		border-right: var(--border-modal);
 	}
@@ -27,6 +28,7 @@
 	.modal-section2 {
 		width: 100%;
 		border-radius: 0 0 0.67rem 0.67rem;
+		border-top: 0;
 		border-bottom: var(--border-modal);
 		border-left: var(--border-modal);
 		border-right: var(--border-modal);
@@ -63,6 +65,7 @@
 		width: 100%;
 		border-radius: 0.67rem 0.67rem 0 0;
 		border-top: var(--border-modal);
+		border-bottom: 0;
 		border-left: var(--border-modal);
 		border-right: var(--border-modal);
 	}
@@ -70,6 +73,7 @@
 	.modal-section2 {
 		width: 100%;
 		border-radius: 0 0 0.67rem 0.67rem;
+		border-top: 0;
 		border-bottom: var(--border-modal);
 		border-left: var(--border-modal);
 		border-right: var(--border-modal);
