@@ -1,15 +1,36 @@
 @charset "UTF-8";
 
+.workbook {
+	background-color: #4b525b80;
+	border-radius: 0.4rem;
+	padding: 0.4rem;
+	display: flex;
+	height: 5rem;
+}
+
+.workbook:hover {
+	background-color: #4b525bff;
+}
+
+.workbook-title {
+    font-family: var(--semibold);
+}
+
+.workbook-subtitle {
+	opacity: 70%;
+}
+
 .article-backButton {
-	background-color: #4b525b;
+	background-color: #4b525b80;
 	padding: 0.5rem;
 	border-radius: 0.4rem;
-	display: inline-block;
+	display: inline-flex;
 	margin-right: auto;
 	margin-bottom: 1rem;
 }
 
-.article-backButton-text {
+.article-backButton:hover {
+	background-color: #4b525bff;
 }
 
 .article-title {
