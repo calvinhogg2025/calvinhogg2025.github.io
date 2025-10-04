@@ -16,7 +16,7 @@
     <body style="background-color: #101018;">
 
 		<nav id="navbar">
-			<img id="logo" src="assets/logos/calvin.svg"/>
+			<img id="logo" src="assets/icons/calvin.svg"/>
 			<a class="navbar-page" href="renders.html">
 				<img class="navbar-page-image" src="assets/icons/renders.svg"/>
 				<p class="navbar-page-text">Renders</p>
@@ -73,45 +73,13 @@
 		<div id="content" onclick="hideMenu()" class="about-background" style="background-image: url('assets/images/about/background.webp')">
 
 			<div class="about-overlay">
+				<img style="width: 120px; border-radius: 50rem; margin-bottom: 1rem;" src="assets/images/about/profile.gif"/>
 				<p style="font-size: 30px; font-family: var(--semibold); margin-bottom: 0.5rem;">About me</p>
 				<p style="margin-bottom: 2rem;">I built this website from scratch both to showcase my work and to fiddle with designing good user interfaces and experiences. Unlike with social media platforms, having access to the code means I'm able to control every tiny detail. I see it as a curated museum of sorts. It's been through numerous iterations since its inception, becoming slightly more refined and feature-rich each time.</p>
 				<p style="margin-bottom: 2rem;">I'm passionate about several forms of digital media, and consider myself a jack-of-all-trades, but my main interests would have to be 3D animation and game development, specifically creating characters and realistic environments. When I'm not busy making stuff, I enjoy hiking, swimming and watching tutorials.</p>
-				<p style="margin-bottom: 2rem;">If you have any feedback or just want to get in touch, you can send me an email below.</p>
-				<div class="about-grid">
-					<div class="about-link" data-bs-toggle="modal" data-bs-target="#modal-Contact">
-						<p class="about-link-text">Contact me</span>
-					</div>
-					<a class="about-link" href="https://www.youtube.com/@CalvinHogg" target="_blank">
-						<img style="filter: invert(); margin: auto;" src="assets/logos/youtube.svg"/>
-					</a>
-					<a class="about-link" href="https://nz.linkedin.com/in/calvinhogg2000" target="_blank">
-						<img style="filter: invert(); margin: auto;" src="assets/logos/linkedin.svg"/>
-					</a>
-				</div>
 			</div>
 
 		</div>
-
-		<div class="modal standard-modal fade" id="modal-Contact" tabindex="-1">
-            <div class="modal-dialog contact-dialog">
-				<div class="contact">
-					<p class="modal-title" style="margin-bottom: 1rem;">Contact me</p>
-					<form method="post" action="contact.php" style="display: flex; flex-direction: column;">
-						<p class="modal-label">Name</p>
-						<input class="modal-field" type="text" id="Name" name="Name" required>
-						<p class="modal-label">Email address</p>
-						<input class="modal-field" type="email" id="Email" name="Email" required>
-						<p class="modal-label">Message</p>
-						<textarea class="modal-field" type="text" id="Message" name="Message" required></textarea>
-						<button class="button" style="width: 150px;" type="submit" id="Submit">
-							<div class="button-text">
-								<p class="button-text1">Send message</p>
-							</div>
-						</button>
-					</form>
-                </div>
-            </div>
-        </div>
 
 		<script src="scripts/jquery-3.7.1.min.js"></script>
 		<script src="scripts/bootstrap.bundle.min.js"></script>
