@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.article-backButton {
+	background-color: #4b525b;
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+	display: inline-block;
+	margin-right: auto;
+	margin-bottom: 1rem;
+}
+
+.article-backButton-text {
+}
+
+.article-title {
+    font-family: var(--semibold);
+	font-size: 1.7rem;
+}
+
+.article-date {
+	font-size: 1.4rem;
+}
+
+.article-correction {
+	font-size: 0.95rem;
+	font-style: italic;
+	opacity: 80%;
+}
+
+.article-header {
+    font-family: var(--semibold);
+	font-size: 1.5rem;
+}
+
+.article-body {
+}
